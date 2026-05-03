@@ -4,6 +4,8 @@ A simple time changer for the 30 Minutes limited Demo version of FluidSIM.
 This Python script extends the 30-minute session limit of the FluidSIM Demo by automating system time manipulation.
 
 
+Download Link: https://github.com/LaptopCpu/FluidSIM-Time-Changer/archive/refs/heads/main.zip
+
 
 Requirements:
 - Windows 10/11
