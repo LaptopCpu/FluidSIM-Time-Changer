@@ -6,13 +6,11 @@ import datetime
 import sys
 import ctypes
 
-# --- FENSTER VERSTECKEN FUNKTION ---
 def hide_console():
     hwnd = ctypes.windll.kernel32.GetConsoleWindow()
     if hwnd != 0:
         ctypes.windll.user32.ShowWindow(hwnd, 0)
 
-# --- ADMIN-RELAUNCH LOGIK ---
 def is_admin():
     try:
         return ctypes.windll.shell32.IsUserAnAdmin()
@@ -30,7 +28,6 @@ def run_as_admin():
         )
         return False if int(ret) > 32 else sys.exit()
 
-# --- SPEICHERORT IM APPDATA-ORDNER ---
 appdata_path = os.path.join(os.environ['APPDATA'], "FluidSIM_Bypass")
 if not os.path.exists(appdata_path):
     os.makedirs(appdata_path)
@@ -97,7 +94,6 @@ def main():
         except: return
         config = save_config(path, hours)
     else:
-        # Hier wird der Speicherort nun immer angezeigt
         print(f"[INFO] Konfigurationsdatei: {CONFIG_FILE}")
         print(f"[INFO] Aktueller Pfad: {config['path']}")
         print(f"[INFO] Gesamt-Laufzeit: {config['hours']} Stunden")
@@ -115,7 +111,6 @@ def main():
             except:
                 print("Ungültige Eingabe.")
 
-    # Zeit berechnen
     offset_hours = float(config["hours"]) - 0.5
     back_dated_time = datetime.datetime.now() - datetime.timedelta(hours=offset_hours)
 
