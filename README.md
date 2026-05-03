@@ -22,4 +22,5 @@ Installation:
 
 
 Extra:
-If you need help finding your path to the FluidSIM.exe File look into the .pdf
+- Whilst running the FluidSIM application some websites might not load due to your system time being changed!
+- If you need help finding your path to the FluidSIM.exe File look into the .pdf
