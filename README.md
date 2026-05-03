@@ -8,7 +8,8 @@ Download Link: https://github.com/LaptopCpu/FluidSIM-Time-Changer/archive/refs/h
 Requirements:
 - Windows 10/11
 - Admin Rights
-- Windows Time Service must be enabled 
+- Windows Time Service must be enabled
+- Python 3.x
 
 
 
