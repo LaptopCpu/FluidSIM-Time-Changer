@@ -21,6 +21,6 @@ Installation:
 
 
 
-Extra:
-- Whilst running the FluidSIM application some websites might not load due to your system time being changed!
+Extra/Warning:
+- Whilst running the FluidSIM Time Changer some websites might not load due to your system time being changed! 
 - If you need help finding your path to the FluidSIM.exe File look into the .pdf
